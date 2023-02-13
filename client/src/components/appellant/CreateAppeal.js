@@ -135,6 +135,10 @@ const CreateAppeal = ({ createAppeal, history, clearPaymentStatus }) => {
             if (isLoading) {
                 return (
                     <div className="container text-center">
+                        <div className="text-center mt-5">
+                            File is uploading. This might take a while. Please
+                            do not refresh the page
+                        </div>
                         <ReactLoading
                             type={'cylon'}
                             color={'#095484'}
