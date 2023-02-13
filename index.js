@@ -74,7 +74,7 @@ app.use('/payment', paymentRoutes);
 // setInterval(queryApi, 900000);
 
 // Define PORT
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 
 // Model relations
 Appeal.belongsTo(Appellant, { constraints: true, onDelete: 'CASCADE' });
