@@ -340,14 +340,14 @@ router.get('/fetchData/:id', auth, async (req, res) => {
 
         // =======================================================
         const processUrl = process.env.PAYMENT_PROCESS_URL;
-        const messageType = '0100';
+        const messageType = process.env.MESSAGE_TYPE;
         const merchantId = process.env.MERCHANT_ID;
         const serviceId = process.env.SERVICE_ID;
-        const transactionAmount = 1000.0;
-        const currencyCode = 'INR';
+        const transactionAmount = process.env.TRANSACTION_AMOUNT;
+        const currencyCode = process.env.CURRENCY_CODE;
         const secretKey = process.env.NSDL_KEY;
-        const successUrl = 'https://test.areatappeal.in/payment/success';
-        const failUrl = 'https://test.areatappeal.in/payment/fail';
+        const successUrl = process.env.SUCCESS_URL;
+        const failUrl = process.env.FAIL_URL;
         const additionalField1 = customerEmail;
         const additionalField2 = customerEmail;
         const additionalField3 = customerEmail;
