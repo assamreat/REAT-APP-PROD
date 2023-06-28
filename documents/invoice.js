@@ -21,7 +21,7 @@ module.exports = function (pdfDoc, appeal, receipt) {
         .moveDown(0.1)
         .text('Appeal Id:                           ' + appeal.id)
         .moveDown(0.1)
-        .text('Transaction Id:                    ' + receipt.BankTransactionNo)
+        .text('Transaction Id:                    ' + receipt.OrderId)
         .moveDown(0.1)
         .text('Status:                                 ' + 'Success')
         .moveDown(0.1)
